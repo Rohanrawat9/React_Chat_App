@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .selected{
+        @apply bg-sky-400 p-1 rounded-full;
+    }
+    .sended{
+        @apply justify-end w-full flex;
+    }
+    .recieved{
+        @apply justify-start w-full flex;
+    }
+}
+
+*{
+    scrollbar-width: 0.2rem;
+    scrollbar-color: #ffffff39;
+}
+
+*::-webkit-scrollbar{
+    width: 0.2rem;
+}
+
+*::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: #ffffff39;
+    width: 0.1rem;
+}
+
+input:focus{
+    outline: transparent;
+}
+
